@@ -1,0 +1,3 @@
+./a.out -u login name -p passwd -t web -q port:21 -f app,os  -g 1
+./a.out -u login name -p passwd -t host -q port:21 -f app,os  -g 1
+./a.out -u login name -p passwd -t schema
