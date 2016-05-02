@@ -1,10 +1,12 @@
 
   make ＃编译程序
-  make so ＃编译libZoomeye.a 静态库
+  make so ＃编译libZoomeye.a 静态库  存放在libs目录下
 
 或者通过
-  gcc zoomeyeapi.c ./libZoomeye.a -lc -lcurl 编译程序
+  gcc zoomeyeapi.c ./libZoomeye.a -lc -lcurl -I/usr/include/libxml2  -lxml2编译程序
+
 注意：
 1.zmem.c zmem.c此版本未使用，有bug谨慎使用
 2.程序中只给出原始数据和json解析后的数据，没有提供进一步分json分析结果。需要根据cJSON.h cJSON.c中的函数继续分析。获取自己想要的数据；
 3.程序使用时，注意释放cJSON的数据，以及保存原始数据malloc的数据指针；
+4.程序可以间隔10小时请求一次验证token，会保存的运行目录的xml文件中

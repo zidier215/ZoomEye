@@ -2,6 +2,8 @@
 #ifndef __LOGIN_IN_H__
 #define __LOGIN_IN_H__
 
+#define AUTO_SAVE_XMLNAME ("savefile")
+#define AUTH_AVL_TIME_HOUR (10)
 typedef struct __login_info_t{
 
 	 char username[256];

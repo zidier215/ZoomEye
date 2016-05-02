@@ -2,3 +2,7 @@
 tmp
 a.out
 *.txt
+*.so
+*.a
+pro
+.DS_Store
